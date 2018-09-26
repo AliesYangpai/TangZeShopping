@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.activity.ShowInfoDetailActivity">
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_info_show_detial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+
+    <WebView
+        android:id="@+id/wv_info_detail_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_info_show_detial"
+        />
+
+</RelativeLayout>

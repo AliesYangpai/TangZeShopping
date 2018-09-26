@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.fragment.FragmentGiveGoods">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_give_goods_fragment"
+        layout="@layout/common_title_in_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--中间-->
+
+
+
+    <RadioGroup
+        android:id="@+id/ll_order_or_stock"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/include_title_give_goods_fragment"
+        android:background="@color/white"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_give_goods_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/send_order"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/give_goods_item_change"
+            android:background="@color/white"
+            />
+
+       <View
+           android:layout_width="1dp"
+           android:layout_height="24dp"
+           android:background="@color/bgGray"
+
+           />
+
+        <RadioButton
+            android:id="@+id/rb_my_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/my_stock"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/give_goods_item_change"
+            android:background="@color/white"
+            />
+
+    </RadioGroup>
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_order_or_stock"
+        />
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/ll_the_5_or_My_stock"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/ll_order_or_stock"-->
+        <!-->-->
+
+    <!--&lt;!&ndash;5种类配货状态,引用布局，用于配货订单&ndash;&gt;-->
+
+    <!--<include-->
+        <!--android:id="@+id/include_give_goods_5_state"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--layout="@layout/the_5_give_goods_state"-->
+        <!--/>-->
+
+     <!--&lt;!&ndash;我的库存中，用于查询数据&ndash;&gt;-->
+       <!--<include-->
+           <!--android:id="@+id/include_give_goods_my_stock_search"-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--layout="@layout/my_stock_search"-->
+           <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+
+    <!--下拉刷新布局-->
+    <!--<org.tangze.work.widget.pullfresh.PullToRefreshLayout-->
+        <!--android:id="@+id/refresh_Layout_in_give_goods"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/ll_the_5_or_My_stock"-->
+
+        <!-->-->
+
+        <!--<include-->
+            <!--android:id="@+id/include_refresh_head"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--layout="@layout/refresh_head" />-->
+
+
+        <!--<org.tangze.work.widget.pullfresh.PullableListView-->
+            <!--android:id="@+id/lv_orders_common"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="none"-->
+            <!--/>-->
+
+        <!--<include layout="@layout/load_more" />-->
+
+    <!--</org.tangze.work.widget.pullfresh.PullToRefreshLayout>-->
+
+
+
+
+</RelativeLayout>

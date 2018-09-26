@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.fragment.FragmentMain">
+
+
+    <include
+        android:id="@+id/include_title_main_fragment"
+        layout="@layout/common_title_in_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <!--下拉刷新布局-->
+    <org.tangze.work.widget.pullfresh.PullToRefreshLayout
+        android:id="@+id/refresh_Layout_in_mian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_main_fragment"
+        >
+
+        <include
+            android:id="@+id/include_refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/refresh_head" />
+
+
+        <!--上下拉方法待定-->
+        <org.tangze.work.widget.pullfresh.PullableListViewUpAndDown
+            android:id="@+id/lv_mian_recommand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+
+
+        <!--<org.tangze.work.widget.pullfresh.PullableListViewDown-->
+            <!--android:id="@+id/lv_mian_recommand"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scrollbars="none"-->
+            <!--/>-->
+
+
+
+
+
+        <!--<org.tangze.work.widget.pullfresh.PullableGridViewWithHeader-->
+            <!--android:id="@+id/gv_mian_recommand"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:numColumns="3"-->
+            <!--android:stretchMode="columnWidth"-->
+
+            <!--android:scrollbars="none"-->
+            <!--/>-->
+
+
+        <include layout="@layout/load_more" />
+
+    </org.tangze.work.widget.pullfresh.PullToRefreshLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

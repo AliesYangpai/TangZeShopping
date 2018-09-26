@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.activity.SearchActivity">
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_search"
+        />
+
+
+    <!--搜索智能展示框-->
+
+
+    <ListView
+        android:id="@+id/lv_search_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:layout_below="@id/include_title_search"
+
+        />
+
+
+
+    <!--历史记录-->
+    <include
+        android:id="@+id/include_search_history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_search_reminder"
+        layout="@layout/search_history_layout"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="org.tangze.work.activity.SearchResultActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_search_result_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+    <!--下拉刷新布局-->
+    <org.tangze.work.widget.pullfresh.PullToRefreshLayout
+        android:id="@+id/refresh_Layout_earch_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_search_result_activty"
+        >
+        <include
+            android:id="@+id/include_refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/refresh_head" />
+
+
+
+
+
+        <org.tangze.work.widget.pullfresh.PullableListViewUp
+            android:id="@+id/lv_product_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            />
+
+        <include layout="@layout/load_more" />
+
+    </org.tangze.work.widget.pullfresh.PullToRefreshLayout>
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_empty"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

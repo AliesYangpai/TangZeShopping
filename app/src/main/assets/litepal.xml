@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="TangZeShopping.db" ></dbname>  <!--数据库名称-->
+
+    <version value="1" ></version>  <!--数据库版本号-->
+
+
+    <!--list,为表的结构-->
+
+    <list>
+        <mapping class="org.tangze.work.entity.Address"></mapping>
+        <mapping class="org.tangze.work.entity.Classify"></mapping>
+        <mapping class="org.tangze.work.entity.Product"></mapping>
+        <mapping class="org.tangze.work.entity.User"></mapping>
+        <mapping class="org.tangze.work.entity.ClassifySecond"></mapping>
+        <mapping class="org.tangze.work.entity.MyCollection"></mapping>
+        <mapping class="org.tangze.work.entity.ShoppingCar"></mapping>
+        <mapping class="org.tangze.work.entity.DeliverOrder"></mapping>
+        <mapping class="org.tangze.work.entity.SearchHistory"></mapping>
+        <mapping class="org.tangze.work.entity.ShowInfo"></mapping>
+    </list>
+</litepal>

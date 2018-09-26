@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.activity.DeliverOrderSuccessActivity">
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_order_success_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+    <ImageView
+        android:id="@+id/iv_pic_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_deliver_order_succeed"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/include_title_order_success_activty"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_text_order_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pic_success"
+        android:text="下单成功"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_continue_to_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_text_order_success"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:background="@color/bgRed"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="继续采购"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

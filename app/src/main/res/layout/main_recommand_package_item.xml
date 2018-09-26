@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <!--左-->
+        <LinearLayout
+            android:id="@+id/ll_grid1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/iv_pic1"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                />
+            <TextView
+                android:id="@+id/tv_str1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:textSize="10sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <!--中-->
+
+        <LinearLayout
+            android:id="@+id/ll_grid2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/iv_pic2"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                />
+            <TextView
+                android:id="@+id/tv_str2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <!--右-->
+
+        <LinearLayout
+            android:id="@+id/ll_grid3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/iv_pic3"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                />
+            <TextView
+                android:id="@+id/tv_str3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="10sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

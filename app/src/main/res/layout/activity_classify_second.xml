@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.tangze.work.activity.SecondClassifyActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_secondClassify_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+
+    <!--下拉刷新布局-->
+    <org.tangze.work.widget.pullfresh.PullToRefreshLayout
+        android:id="@+id/refresh_Layout_in_second_classify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_title_secondClassify_activty"
+        >
+        <include
+            android:id="@+id/include_refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/refresh_head" />
+
+
+
+
+
+        <org.tangze.work.widget.pullfresh.PullableGridView
+            android:id="@+id/gv_second_classify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="3dip"
+            android:verticalSpacing="3dip"
+            />
+
+        <include layout="@layout/load_more" />
+
+    </org.tangze.work.widget.pullfresh.PullToRefreshLayout>
+
+</RelativeLayout>

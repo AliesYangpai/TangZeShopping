@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.activity.AddressNewOrEditActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_add_new_address_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+
+    <!--收件人-->
+    <RelativeLayout
+        android:id="@+id/rl_reciever_in_new"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/include_title_add_new_address_activty"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_reciever_text_in_new"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/receiver_text_no_mark"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:id="@+id/et_reciever_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_reciever_text_in_new"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:hint="@string/hint_reciver_name"
+            android:background="@color/white"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+    <!--联系电话-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_reciever_num_in_new"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_reciever_in_new"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_reciever_num_text_in_new"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/phone_num_text"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:id="@+id/et_reciever_num_in_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_reciever_num_text_in_new"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:hint="@string/hint_reciver_num"
+            android:background="@color/white"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+
+
+    <!--选择区域-->
+    <RelativeLayout
+        android:id="@+id/rl_reciever_area_in_new"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_reciever_num_in_new"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_reciever_area_text_in_new"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/sel_area"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_reciever_area_in_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_reciever_area_text_in_new"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:text="@string/reciver_arear"
+            android:textColor="@color/grayOff"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+
+    <!--详细地址-->
+
+    <RelativeLayout
+        android:id="@+id/rl_reciever_addr_detail_in_new"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_reciever_area_in_new"
+        android:padding="10dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/tv_reciever_addr_detail_text_in_new"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/addr_detial"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:id="@+id/et_reciever_addr_detail_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_reciever_addr_detail_text_in_new"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:textColor="@color/grayOff"
+            android:hint="@string/hint_reciver_addr_detail"
+            android:background="@color/white"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+
+    <!--设置是否默认-->
+    <RelativeLayout
+        android:id="@+id/rl_setToDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_reciever_addr_detail_in_new"
+        android:padding="10dp"
+
+        android:layout_marginTop="20dp"
+        >
+        <CheckBox
+            android:id="@+id/cb_setToDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:text="@string/address_to_default"
+            android:drawableLeft="@drawable/button_select_default_in_addr"
+            android:drawablePadding="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--底部按钮-->
+    <include
+        android:id="@+id/include_bottom_addr_new_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bottom_address_common"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

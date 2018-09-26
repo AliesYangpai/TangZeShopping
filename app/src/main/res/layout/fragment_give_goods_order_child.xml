@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.fragment.FragmentGiveGoodsOrderChild">
+
+
+    <include
+        android:id="@+id/include_give_goods_5_state"
+        layout="@layout/the_5_give_goods_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--下拉刷新布局-->
+    <org.tangze.work.widget.pullfresh.PullToRefreshLayout
+        android:id="@+id/refresh_Layout_in_give_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_give_goods_5_state"
+
+        >
+
+        <include
+            android:id="@+id/include_refresh_head"
+            layout="@layout/refresh_head"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <org.tangze.work.widget.pullfresh.PullableListViewUpAndDown
+            android:id="@+id/lv_orders_5_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            />
+
+        <include layout="@layout/load_more" />
+
+    </org.tangze.work.widget.pullfresh.PullToRefreshLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_empty"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

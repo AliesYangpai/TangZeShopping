@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_bg"
+    android:orientation="vertical"
+    tools:context="org.tangze.work.activity.WelcomeActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+
+
+    <org.tangze.work.widget.CirclePageIndicator
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@android:color/transparent"
+        app:radius="5dp"
+        app:fillColor="#FF9900"
+        app:pageColor="@color/white"
+        app:strokeColor="#FF000000"
+        app:strokeWidth="2dp"
+        android:layout_gravity="bottom"
+        />
+
+
+
+
+
+</LinearLayout>

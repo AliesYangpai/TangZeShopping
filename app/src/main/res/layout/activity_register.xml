@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.activity.RegisterActivity">
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_register_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_logo_pic_in_register"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/in_logo"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_below="@id/include_title_register_activty"-->
+        <!--/>-->
+
+
+    <!--用户名、密码、昵称、注册码、电话、邮箱-->
+    <RelativeLayout
+        android:id="@+id/ll_name_android_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title_register_activty"
+        android:layout_marginTop="20dp"
+
+        >
+
+       <!--用户名-->
+        <LinearLayout
+            android:id="@+id/layout_account_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+
+                />
+
+            <EditText
+                android:id="@+id/et_username_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_username"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:textSize="15sp"
+                android:textColor="@color/text_gray"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_accont_rg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_line"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/layout_account_rg"
+            />
+
+
+        <!--密码-->
+        <LinearLayout
+            android:id="@+id/layout_password_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/view_line_accont_rg"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+
+                />
+            <EditText
+                android:id="@+id/et_password_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:hint="@string/enter_password"
+                android:background="@null"
+                android:password="true"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_gray"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_password_rg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/layout_password_rg"
+            />
+
+        <!--昵称-->
+
+
+        <LinearLayout
+            android:id="@+id/layout_nick_name_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/view_line_password_rg"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nickname"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+
+                />
+            <EditText
+                android:id="@+id/et_nick_name_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_nickname"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_gray"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_nick_name_rg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/layout_nick_name_rg"
+            />
+
+
+        <!--注册码-->
+
+        <LinearLayout
+            android:id="@+id/layout_code_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/view_line_nick_name_rg"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/requestcode"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:id="@+id/et_code_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_code"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:digits="@string/filter_code"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_gray"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_code_rg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/layout_code_rg"
+            />
+
+
+
+        <!--电话-->
+
+
+        <LinearLayout
+            android:id="@+id/layout_tel_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/view_line_code_rg"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tel"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+
+                />
+            <EditText
+                android:id="@+id/et_tel_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_tel"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:numeric="integer"
+                android:textSize="15sp"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_gray"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_tel_rg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/layout_tel_rg"
+            />
+
+        <!--邮箱-->
+
+
+        <LinearLayout
+            android:id="@+id/layout_email_rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/view_line_tel_rg"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emial"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+
+                />
+            <EditText
+                android:id="@+id/et_emial_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_email"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_gray"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_emial_rg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/layout_email_rg"
+            />
+
+
+        <!--上级代理qq-->
+        <LinearLayout
+            android:id="@+id/layout_user_qq"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/view_line_emial_rg"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_QQ"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+
+                />
+            <EditText
+                android:id="@+id/et_user_qq_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/enter_qq"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:numeric="integer"
+                android:textSize="15sp"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_gray"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_top_qq_rg"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/layout_user_qq"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <!--注册按钮-->
+    <RelativeLayout
+        android:id="@+id/rl_register_new_rg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/registe_bg_change"
+
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/register_new"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

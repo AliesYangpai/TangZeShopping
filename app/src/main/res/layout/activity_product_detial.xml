@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="org.tangze.work.activity.ProductDetialActivity">
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_product_detail_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+
+
+
+    <!--底部加入购物车-->
+    <include
+        android:id="@+id/include_add_to_shop_car_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/add_to_shopping_car"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <!--中间viewPager-->
+    <ScrollView
+        android:id="@+id/sv_detial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/include_title_product_detail_activty"
+        android:layout_above="@id/include_add_to_shop_car_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+            <!--ViewPager相关-->
+
+
+            <RelativeLayout
+                android:id="@+id/rl_product_pic"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+
+                >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_product_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <org.tangze.work.widget.PageIndexView
+                    android:id="@+id/pic_product_pic_indexpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="17dp" />
+            </RelativeLayout>
+
+
+            <!--产品描述相关-->
+
+            <include
+                android:id="@+id/include_product_detial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/product_description"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

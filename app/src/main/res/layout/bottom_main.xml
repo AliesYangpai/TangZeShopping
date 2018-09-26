@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--mainActivit中的底部按钮-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/barLine"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/bottomBar"
+        >
+
+
+    <RadioGroup
+        android:id="@+id/rg_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/rb_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/main"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/bottom_main_img_change"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+
+
+
+        <RadioButton
+            android:id="@+id/rb_classify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/classify"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/bottom_classify_img_change"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+
+
+
+        <RadioButton
+            android:id="@+id/rb_shoppingCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/shoppingCar"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/bottom_shopping_car_img_change"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_giveGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/giveGoods"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/bottom_give_goods_img_change"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/mine"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/bottom_mine_img_change"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+    </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

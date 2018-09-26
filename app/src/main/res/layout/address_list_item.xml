@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:id="@+id/tv_reciever_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/receiver_text"
+                />
+
+             <TextView
+                 android:id="@+id/tv_reciever_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="张先生"
+                 android:layout_toRightOf="@id/tv_reciever_text"
+                 />
+
+
+
+            <TextView
+                android:id="@+id/tv_reciever_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18526455236"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_address_detial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/test_address_detial"
+            />
+
+
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:orientation="horizontal"
+             android:gravity="center_vertical"
+             android:layout_marginTop="5dp"
+             >
+
+
+
+             <RadioButton
+                 android:id="@+id/rb_default"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:text="@string/address_to_default"
+                 android:textSize="14sp"
+                 android:drawableLeft="@drawable/button_select_default_in_addr"
+                 android:button="@null"
+                 android:drawablePadding="10dp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentLeft="true"
+                 android:textColor="@drawable/bottom_text_change"
+
+                 />
+
+
+            <LinearLayout
+                android:id="@+id/ll_edit_and_del_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_edite_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/address_edite"
+                    android:textColor="@color/text_gray"
+                    android:drawableLeft="@drawable/img_addr_edit_icon"
+                    android:textSize="14sp"
+                    android:drawablePadding="5dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_del_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/address_del"
+                    android:textColor="@color/text_gray"
+                    android:drawableLeft="@drawable/img_addr_del_icon"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="30dp"
+                    android:drawablePadding="5dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+             <!--<TextView-->
+                 <!--android:id="@+id/tv_edite_address"-->
+                 <!--android:layout_width="wrap_content"-->
+                 <!--android:layout_height="match_parent"-->
+                 <!--android:text="@string/address_edite"-->
+                 <!--android:layout_weight="1"-->
+                 <!--android:textSize="14sp"-->
+                 <!--android:gravity="center"-->
+                 <!--android:textColor="@color/bgRed"-->
+                 <!--/>-->
+
+
+
+             <!--<TextView-->
+                 <!--android:id="@+id/tv_del_address"-->
+                 <!--android:layout_width="wrap_content"-->
+                 <!--android:layout_height="match_parent"-->
+                 <!--android:text="@string/address_del"-->
+                 <!--android:layout_weight="1"-->
+                 <!--android:gravity="center"-->
+                 <!--android:textSize="14sp"-->
+                 <!--android:textColor="@color/bgRed"-->
+                 <!--/>-->
+
+         </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

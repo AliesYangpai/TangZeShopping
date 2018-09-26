@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <RadioGroup
+        android:id="@+id/rg_5_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_wait_for_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/wait_for_send"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:button="@null"
+            android:layout_weight="1"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_sended"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/sended"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/rb_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/sured"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+        <!--退货相关-->
+        <RadioButton
+            android:id="@+id/rb_back_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/back_goods"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/rb_denied_applay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/order_denied"
+            android:textColor="@drawable/bottom_text_change"
+            android:textSize="12sp"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+
+
+
+
+    </RadioGroup>
+    
+</LinearLayout>

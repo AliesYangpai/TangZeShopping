@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/item_white_bg_in_mine"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_order_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+
+
+            >
+
+            <RadioButton
+                android:id="@+id/rb_not_deliver_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_not_deliver_goods"
+                android:gravity="center"
+                android:text="@string/not_deliver_goods"
+
+                android:textSize="12sp" />
+
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/rb_wait_for_sure"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/wait_for_sure"-->
+            <!--android:textColor="@color/gray_order_state"-->
+            <!--android:textSize="12sp"-->
+            <!--android:drawableTop="@drawable/img_wait_for_sure"-->
+            <!--android:button="@null"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+
+            <RadioButton
+                android:id="@+id/rb_delivering"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_delivering"
+                android:gravity="center"
+
+                android:text="@string/delivering"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_sure_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_sure_finish"
+                android:gravity="center"
+
+                android:text="@string/sure_finish"
+                android:textSize="12sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_back_goods_in_down"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_canceled"
+                android:gravity="center"
+
+                android:text="@string/back_goods_in_down"
+                android:textSize="12sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_denied"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_wait_for_sure"
+                android:gravity="center"
+
+                android:text="@string/denied"
+                android:textSize="12sp" />
+
+
+            <RadioButton
+                android:id="@+id/rb_after_sale_service"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/img_after_sale_service"
+                android:gravity="center"
+
+                android:text="@string/after_sale_service"
+                android:textSize="12sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

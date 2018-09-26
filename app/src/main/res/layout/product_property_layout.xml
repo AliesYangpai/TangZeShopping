@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_product_property"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+
+
+        <RadioButton
+            android:id="@+id/rb_synthetic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/synthetic"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:button = "@null"
+            android:textColor="@drawable/give_goods_item_change"
+            android:background="@color/white"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/bgGray"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_sales_volume"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/sales_volume"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:button = "@null"
+            android:textColor="@drawable/give_goods_item_change"
+            android:background="@color/white"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/bgGray"
+
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/price"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_weight="1"
+            android:button = "@null"
+            android:textColor="@drawable/give_goods_item_change"
+            android:background="@color/white"
+            />
+
+
+    </RadioGroup>
+
+</LinearLayout>

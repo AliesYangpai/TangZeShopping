@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--fragment中的公用tittle-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/titleBar"
+        >
+
+      <TextView
+          android:id="@+id/tv_fragment_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="首页"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:textColor="@color/white"
+
+          />
+
+      <ImageView
+          android:id="@+id/iv_fragment_search"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_alignParentRight="true"
+          android:src="@drawable/img_search"
+          />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+        <!--搜索框，点击跳转搜索页面-->
+        <LinearLayout
+            android:id="@+id/ll_fragment_to_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:padding="3dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/img_search_layout"
+            android:layout_weight="1"
+
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_search_in_layout"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="搜索商品"
+               android:gravity="center"
+               android:textSize="15sp"
+               android:layout_marginLeft="10dp"
+               android:textColor="@color/text_gray"
+               />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_address_icon_fg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_address_main_fg"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_current_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="........"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

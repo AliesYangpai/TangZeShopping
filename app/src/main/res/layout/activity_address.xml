@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.activity.AddressActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_address_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+    <!--底部按钮-->
+    <include
+        android:id="@+id/include_bottom_address_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bottom_address_common"
+        android:layout_alignParentBottom="true"
+        />
+
+    <!--中间的listView-->
+    <ListView
+        android:id="@+id/lv_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title_address_activty"
+        android:layout_above="@id/include_bottom_address_activty"
+        android:dividerHeight="10dp"
+        ></ListView>
+
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_empty"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.tangze.work.widget.layout.InputMethodLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    android:id="@+id/iml"
+    tools:context="org.tangze.work.activity.SettlementActivity">
+
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_settlement_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+    <!--底部合计提交订单-->
+    <include
+        android:id="@+id/include_bottom_settlement_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/bottom_settlement_commit"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ScrollView
+        android:id="@+id/sv_settlement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title_settlement_activty"
+        android:layout_above="@id/include_bottom_settlement_activty"
+        android:background="@color/bgGray"
+        android:scrollbars="none"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+
+
+            <!--顶部的地址view-->
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/address_in_settlement"
+                />
+
+            <!--订单列表 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/product_list_text"
+                    android:textColor="@color/text_gray"
+                    />
+
+            </LinearLayout>
+
+            <!--listView-->
+
+            <ListView
+                android:id="@+id/lv_product_to_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                ></ListView>
+
+            <!--商品合计-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/all_text"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_product_count_in_footView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="26"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@color/bgRed"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/all_other_text"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@color/text_gray"
+                    />
+
+            </LinearLayout>
+
+
+            <!--订单备注相关-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_remark_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/product_list_remark"
+                    android:textColor="@color/text_gray"
+                    />
+
+                <EditText
+                    android:id="@+id/et_order_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:hint="@string/order_remark_hint"
+                    android:gravity="top"
+                    android:textSize="14sp"
+                    android:layout_below="@id/tv_remark_text"
+                    />
+            </RelativeLayout>
+
+
+
+
+            <!--测试支付-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="支付宝"
+                    />
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="微信支付"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</org.tangze.work.widget.layout.InputMethodLayout>

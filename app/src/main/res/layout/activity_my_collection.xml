@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgGray"
+    tools:context="org.tangze.work.activity.MyCollectionActivity">
+
+
+    <!--title-->
+    <include
+        android:id="@+id/include_title_my_collection_activty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_title_in_activity"
+        />
+
+
+    <!--底部list-->
+    <!--<ListView-->
+        <!--android:id="@+id/lv_collection"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/include_title_my_collection_activty"-->
+        <!--/>-->
+
+
+    <org.tangze.work.widget.slider.SilderListView
+        android:id="@+id/lv_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include_title_my_collection_activty"
+        android:scrollbars="none"
+
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="false"
+        />
+
+    <!--<com.xa.huateng.widget.SilderListView-->
+        <!--android:id="@+id/familydata_lv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#fff4f7f9"-->
+        <!--android:cacheColorHint="#00000000"-->
+        <!--android:divider="#dddbdb"-->
+        <!--android:dividerHeight="10dp"-->
+        <!--android:drawSelectorOnTop="false"-->
+        <!--android:listSelector="#00000000"-->
+        <!--android:scrollbars="none"-->
+        <!--android:scrollingCache="false"-->
+        <!--/>-->
+
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_empty"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

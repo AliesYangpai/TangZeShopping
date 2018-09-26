@@ -1,0 +1,294 @@
+<resources>
+    <string name="app_name">安途通</string>
+
+
+
+   <!--首页fragment-->
+    <string name="main">首页</string>
+    <string name="classify">分类</string>
+    <string name="shoppingCar">购物车</string>
+    <string name="giveGoods">配货</string>
+    <string name="mine">我的</string>
+    <string name="user_center">个人中心</string>
+    <string name="search_in_catogray_fg">搜索商品</string>
+    <string name="product_list">商品列表</string>
+
+    <string name="team_buy">拼团</string>
+    <string name="secend_kill">每日秒杀</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="customer_QQ">客服QQ</string>
+    <string name="feedback">意见反馈</string>
+    <string name="others">其他</string>
+    <string name="main_recommand">首页推荐</string>
+    <string name="main_pro_center">产品中心</string>
+
+    <!--个人中心界面-->
+    <string name="my_order">我的订单</string>
+    <string name="function_text">功能</string>
+    <string name="address">地址管理</string>
+    <string name="not_deliver_goods">待发货</string>
+    <string name="wait_for_sure">待确认</string>
+
+    <string name="denied">已拒绝</string>
+    <string name="delivering">发货中</string>
+    <string name="sure_finish">已完成</string>
+    <string name="canceled">已取消</string>
+    <string name="back_goods_in_down">退货申请</string>
+    <string name="after_sale_service">售后</string>
+
+
+
+    <string name="wait_for_accept">待受理</string>
+    <string name="accepting">售后中</string>
+    <string name="accept_finish">售后完成</string>
+
+
+    <string name="id_text">ID：</string>
+
+ <!--用于布局中-->
+    <string name="original_price_text">市场价：</string>
+    <string name="money_mark">￥</string>
+    <string name="unit">件</string>
+    <string name="division">/</string>
+    <string name="unit_division">/件</string>
+    <string name="pro_stock">库存：</string>
+
+
+    <!--下拉刷新相关-->
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    
+    
+    
+    <!--productActity产品界面-->
+    <string name="synthetic">综合</string>
+    <string name="sales_volume">销量</string>
+    <string name="price">价格</string>
+
+
+    <!--productDetailActivty界面相关-->
+    <string name="product_detail_title">商品详情</string>
+    <string name="collecte_it">收藏</string>
+    <string name="call_customer_service">客服</string>
+    <string name="add_to_shop_car">加入购物车</string>
+    <string name="buy_it">立即订购</string>
+
+    <!--AddressActivity-->
+    <string name="address_title">地址管理</string>
+    <string name="receiver_text">收货人：</string>
+    <string name="address_to_default">设为默认</string>
+
+    <string name="address_add_new">添加新地址</string>
+    <string name="address_edit_title">编辑地址</string>
+    <string name="address_edite">编辑</string>
+    <string name="address_del">删除</string>
+    <string name="phone_num_text">联系电话</string>
+    <string name="sel_area">选择区域</string>
+    <string name="addr_detial">详细地址</string>
+
+    <!--<string name="address_sure">确定</string>-->
+
+    <string name="receiver_text_no_mark">收货人</string>
+    <string name="hint_reciver_name">收货人姓名</string>
+    <string name="hint_reciver_num">11位有效电话号码</string>
+    <string name="reciver_arear">北京，北京，东城区</string>
+    <string name="hint_reciver_addr_detail">输入详细街道地址</string>
+    <string name="address_new_sure">确定</string>
+
+    <!--FragmentClassify-->
+    <string name="classify_title">分类</string>
+    <!--FragmentShoppingCar-->
+    <string name="sel_all">全选选中</string>
+    <string name="cancel_all">全部取消</string>
+    <string name="del_selected">删除</string>
+    <string name="deliver_order">提交订单</string>
+    <string name="settlement">结算</string>
+
+
+
+    <!--give_goods_Activity-->
+    <string name="wait_for_send">待发货</string>
+    <string name="sended">已发货</string>
+    <string name="sured">已完成</string>
+    <string name="back_goods">退货申请</string>
+    <string name="wait_for_deal">待受理</string>
+    <string name="send_order">配货订单</string>
+    <string name="my_stock">我的库存</string>
+
+    <!--订单中的7中状态，先写5中类 orderstateActivty-->
+    <string name="order_no_send">待发货</string>
+    <string name="order_back_goods_apply">退货申请</string>
+    <string name="order_sending">发货中</string>
+    <string name="order_finish">已完成</string>
+    <string name="order_denied">已拒绝</string>
+    <string name="my_orders">我的订单</string>
+
+
+    <!--ordercostomerServcie界面-->
+   <string name="wait_to_deal_costomer">待受理</string>
+    <string name="costomer_servicing">售后中</string>
+    <string name="costomer_service_finish">已完成</string>
+    <string name="costomer_service">售后</string>
+
+
+    <!--用户登陆界面-->
+    <string name="login">登陆</string>
+
+    <string name="enter_username_login">请输入账号</string>
+    <string name="enter_password_login">请输入密码</string>
+
+    <string name="enter_username">请输入账号（必填）</string>
+    <string name="enter_password">请输入密码（必填）</string>
+    <string name="enter_nickname">请输入昵称</string>
+    <string name="enter_code">请输入邀请码（必填）</string>
+    <string name="enter_tel">请输入电话号码</string>
+    <string name="enter_email">请输入e-mail</string>
+    <string name="enter_qq">请输入QQ号</string>
+    <string name="register_new">完成</string>
+
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="nickname">昵称</string>
+    <string name="requestcode">邀请码</string>
+    <string name="tel">电话</string>
+    <string name="emial">邮箱</string>
+    <string name="text_QQ">QQ</string>
+    <!--用户SettingActivity界面-->
+    <string name="setting">设置</string>
+    <string name="logout">退出</string>
+
+
+    <!--注册界面-->
+    <string name="register">注册</string>
+    <string name="register_success">注册成功</string>
+
+
+
+    <string name="setUp_qq_first">请先安装QQ客户端</string>
+    <string name="not_get_the_upperQQ">您并未获取到上级QQ</string>
+
+
+
+    <!--SettlementActitiviy-->
+    <string name="reciver_in_settlement">收货人：</string>
+    <string name="monetary_unit">元</string>
+    <string name="total_all">合计：</string>
+
+    <string name="product_list_text">订单列表</string>
+    <string name="product_list_remark">订单备注:</string>
+    <string name="order_remark_hint">请输入订单备注...</string>
+    <string name="order_number">订单编号：</string>
+    <string name="product_count">购买数量：</string>
+
+    <string name="all_text">共</string>
+    <string name="all_other_text">件商品</string>
+
+
+
+    <string name="has_add_to_shop_car">您已经添加过该商品</string>
+    <string name="product_count_first">请输入商品数量</string>
+
+    <string name="order_commit_fail">订单提交失败</string>
+
+
+
+    <!--DeliverOrderSuccessActivty-->
+    <string name="deliver_success">下单成功</string>
+
+    <string name="add_shopcar_success">成功加入购物车</string>
+
+
+    <string name="please_select">请选择产品</string>
+
+
+
+    <!--listView嵌套相关-->
+
+
+    <string name="order_num">订单编号：</string>
+    <!--下级用户-->
+    <string name="sure_to_get">确认收货</string>
+    <string name="apply_to_return">申请退货</string>
+    <string name="apply_to_service">申请售后</string>
+
+
+    <!--上级用户-->
+
+    <string name="sure_to_send">确认发货</string>
+    <string name="agree_to_return_goods">同意退货</string>
+    <string name="deny_to_return_goods">拒绝退货</string>
+
+
+
+
+    <string name="del_defult_address_deny">您不能删除默认地址</string>
+
+
+
+    <string name="giveGoods_order_detial">配货订单详情</string>
+    <string name="my_order_detal">我的订单详情</string>
+
+    <!--ProductCriteriaActivity-->
+    <string name="new_arrival">新品上市</string>
+    <string name="hot_product">热卖商品</string>
+    <string name="boutique">精品推荐</string>
+    <string name="special_deal">特价专区</string>
+
+
+
+
+    <string name="filter_code">1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="text_pic_description">图文详情</string>
+    <string name="address_First">请先设置收货地址</string>
+
+    <string name="text_set_address">设置收货地址</string>
+
+    <string name="in_loading">加载中...</string>
+    <string name="SHI">市</string>
+    <string name="need_text">请输入关键字</string>
+    <string name="new_info">最新信息</string>
+
+
+    <!--第一行-->
+    <string name="feed_back">意见反馈</string>
+    <string name="address_mgr">地址管理</string>
+    <string name="my_collection_str">我的收藏</string>
+    <string name="con_to_service">联系客服</string>
+    <!--第二行-->
+
+    <string name="sys_setting">系统设置</string>
+    <string name="share_to">我要分享</string>
+
+
+    <!--下载地址上线后可用（固定写法）-->
+    <string name="download_url">http://a.app.qq.com/o/simple.jsp?pkgname=org.tangze.work</string>
+
+
+    <string name="wx_pay_text">微信支付</string>
+    <string name="ali_pay_text">支付宝</string>
+    <string name="pay_way_text">请选择支付方式</string>
+
+
+
+
+
+    <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&以下是相关测试数据&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="test_wenzi">阿森纳于1886年由一群在东南伦敦伍尔维奇地区的戴尔广场（Dial Square）一家名为“皇家阿森纳”的武器制造所的工人所成立，初时按地区命名为“戴尔广场”（Dial Square）。第一场比赛是在1886年12月11日进行的，球队以6-0大胜东方流浪者队。1886年12月25日圣诞日，球队易名为“皇家阿森纳”（Royal Arsenal）。最初，皇家阿森纳队一直在各处进行友谊比赛，或者参加地方性的杯赛。1891年，俱乐部完成了改革，成为了职业俱乐部，并再一次改名为“伍尔维奇阿森纳”(Woolwich Arsenal)，1893年，球队加入了足球联盟的联赛，成为了一支乙级球队。在1913年的时候，阿森纳俱乐部搬迁进入海布里球场，并且在这里一呆就是93年，并在随后正式改名为阿森纳。
+在第一次世界大战之后，足球联盟将甲级联赛进行了扩军，经过投票表决，将阿森纳升入了甲级，自从那时候起，阿森纳一直保持在英格兰的顶级联赛中，成为了唯一一支从来没有降过级的球队。</string>
+
+
+    <string name="test_address_detial">专业提供万达购物广场地图北京的信息,万达购物广场地址是:南岸区南坪南城大道(近江南大道),万达购物广场电话是:暂无电话,万达购物广场简介:</string>
+</resources>
